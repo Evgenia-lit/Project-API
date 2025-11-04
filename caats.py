@@ -58,7 +58,7 @@ def create_folder_ya():
         "path": "pd-fpy-130"
     }
     headers = {
-        "Authorization": "y0__xDyw4KkBxjblgMgp5uh_xQwnJ71pwhCPftvr3tI-zvvb0YqCeRrjNG6cA"
+        "Authorization": "000"
     }
 
     response = requests.put(url, params=params, headers=headers)
@@ -71,7 +71,7 @@ def create_image_folder_ya():
         "path": "pd-fpy-130/images"
     }
     headers = {
-        "Authorization": "y0__xDyw4KkBxjblgMgp5uh_xQwnJ71pwhCPftvr3tI-zvvb0YqCeRrjNG6cA"
+        "Authorization":  "000"
     }
 
     response = requests.put(url, params=params, headers=headers)
@@ -90,7 +90,7 @@ def upload_link(filename, is_image=True):
         "path": path
     }
     headers = {
-        "Authorization": "y0__xDyw4KkBxjblgMgp5uh_xQwnJ71pwhCPftvr3tI-zvvb0YqCeRrjNG6cA"
+        "Authorization":  "000"
     }
     response = requests.get(url, params=params, headers=headers)
     url_upload = response.json()["href"]
